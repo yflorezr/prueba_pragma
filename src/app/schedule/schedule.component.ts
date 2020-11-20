@@ -1,10 +1,13 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { FoodModel } from '../models/food.model';
 
 @Component({
   selector: 'schedule',
   templateUrl: './schedule.component.html',
 })
 export class ScheduleComponent {
-  itemsList = [];
+
+  @Input() itemsList: Array<FoodModel> = undefined;
+
   constructor() { }
 }

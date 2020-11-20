@@ -74,3 +74,10 @@ body {
   font-family: Avenir;
   font-size: 12px;
 }
+
+.error {
+  text-align: center;
+  width: 100%;
+  color: red;
+  margin-top: 20px;
+}

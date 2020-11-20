@@ -4,7 +4,6 @@ import { Component } from '@angular/core';
   selector: 'hotel',
   template: `
             <registration></registration>
-            <schedule></schedule>
             `,
 })
 export class AppComponent { }

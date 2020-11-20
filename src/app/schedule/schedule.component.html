@@ -1,7 +1,11 @@
-<ol id="list" *ngIf="">
-  <div>
-    <li class="morning">Breakfast for</li>
-    <li class="afternoon">Lunch for</li>
-    <li class="night">Dinner for</li>
+<ol id="list" *ngIf="itemsList">
+
+  <div *ngFor="let food of itemsList">
+
+    <li class="morning">Breakfast for {{food.name}} on {{food.date}}</li>
+    <li class="afternoon">Lunch for {{food.name}}  on {{food.date}}</li>
+    <li class="night">Dinner for {{food.name}}  on {{food.date}}</li>
+
   </div>
+
 </ol>
